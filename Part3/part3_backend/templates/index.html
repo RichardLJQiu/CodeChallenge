@@ -1,0 +1,34 @@
+{% extends "layouts/master.html" %}
+{% block content %}
+        <div class="row">
+        </div>
+
+        <div class="row medium-margin-top">
+            <div class="col-md-12">
+                    <div class="box text-center">
+                        <div><strong>Job:</strong> <span class="large"> {{ projects }}</span></div>
+                        <form method="post">
+                            {% csrf_token %}
+                            {% for field in postform %}
+                                  <div class="form-group">
+                                    <label for="{{field.label}}">{{field.label}}:</label>
+                                      {{field}}
+                                  </div>
+                            {% endfor %}
+                            <div><button type="submit" class="btn btn-primary">Post Job</button></div><br>
+                        </form>
+
+                        <form method="get">
+                            {% csrf_token %}
+                            {% for field in getform %}
+                                  <div class="form-group">
+                                    <label for="{{field.label}}">{{field.label}}:</label>
+                                      {{field}}
+                                  </div>
+                            {% endfor %}
+                            <div><button type="submit" class="btn btn-primary">Get by Job_uid</button></div><br>
+                        </form>
+                    </div>
+            </div>
+        </div>
+{% endblock %}

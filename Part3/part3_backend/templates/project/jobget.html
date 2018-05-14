@@ -1,0 +1,19 @@
+</body>
+</html>
+{% extends "layouts/master.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-1 col-md-offset-11">
+            <button class="btn btn-primary">Add Project</button>
+        </div>
+    </div>
+
+    <div class="row medium-margin-top">
+        <div class="col-md-12">
+            <div class="box text-center">
+                <div><strong>View Tasks:</strong> <a href="#" class="small">All</a> | <a href="#" class="small">Opened</a></div>
+                <div><strong>Job:</strong> <span class="large"> {{ projects }}</span></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
