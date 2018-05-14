@@ -18,7 +18,7 @@ python3 gaussian_blur3d_starter.py<br>
 ### 2. Test Inference Pipeline pipeline(can run this python file directrlty)<br>
 python3 inference_pipeline_starter.py<br>
 ## Part3: A Web Backend<br>
-![WebPage](/webpage.png)
+![WebPage](/webpage.png)<br>
 Run server at directory of Part3<br>
 ./manage.py runserver<br>
 
