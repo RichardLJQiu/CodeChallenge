@@ -13,11 +13,15 @@ python3 hdf5_to_dicom.py -h ../hdf5_data/hdf5_data.hdf5 -d ../template.dcm -o ..
 "../template.dcm" ------ path to the template DICOM directory<br>
 "../dicom_output/" ------ path to output DICOM directory<br>
 ## Part2: Inference Pipeline and 3D Blurring Module<br>	
+### Design
+At first, I implement the gaussian algorithm to blur a 2D image, and then extend to blur 3D volumne, pixel data computaion is based on hdf5 file.<br> 
 ### 1. Test 3d blur algorithm(can run this python file directrlty)<br>	
 python3 gaussian_blur3d_starter.py<br>
 ### 2. Test Inference Pipeline pipeline(can run this python file directrlty)<br>
 python3 inference_pipeline_starter.py<br>
 ## Part3: A Web Backend<br>
+### Design
+I wrote a simple front end page can send Post and Get request through that textfield. Involve Interference Pipeline to execute background job task.<br> 
 ![WebPage](/webpage.png)<br>
 Run server at directory of Part3<br>
 ./manage.py runserver<br>
