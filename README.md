@@ -18,4 +18,10 @@ python3 gaussian_blur3d_starter.py<br>
 ### 2. Test Inference Pipeline pipeline(can run this python file directrlty)<br>
 python3 inference_pipeline_starter.py<br>
 ## Part3: A Web Backend<br>
-###![WebPage](/webpage.png)
+![WebPage](/webpage.png)
+### Test1: Post request(localhost:8000)
+Can use postman or just type path in the post textfield, I use 3dblurr function as example in Inference Pipeline, it might take a long time to run this function at background.<br>
+Example: /job/?job_name=3dblur&in_dir=./part3_backend/input_volume/mytestfile.hdf5<br>
+### Test2: Get request
+Can type path in the get textfield or type in broswer url field.<br> 
+Example: query/601<br>
